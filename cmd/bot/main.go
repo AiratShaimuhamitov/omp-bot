@@ -12,7 +12,7 @@ import (
 func main() {
 	_ = godotenv.Load()
 
-	token, found := os.LookupEnv("TOKEN")
+	token, found := os.LookupEnv("BOT_TOKEN")
 	if !found {
 		log.Panic("environment variable TOKEN not found in .env")
 	}
